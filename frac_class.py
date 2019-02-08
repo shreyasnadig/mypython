@@ -4,9 +4,8 @@ class fraction:
         self.den=b
 
     def add_frac(self, f2 ):
-        f1 = self
-	den2 = f1.den * f2.den
-        num2 = (f1.num * f2.den) + (f2.num * f1.den)
+	den2 = self.den * f2.den
+        num2 = (self.num * f2.den) + (f2.num * self.den)
         sum = fraction ( num2, den2 )
 	return ( sum )
 
