@@ -19,12 +19,12 @@ def comp_nested_if( a, b, c ):
 
 def comp_if_eq( a, b, c ):
 	low = a if (a < b) else b
-	if( low > c) : c = low 
-	print ( str(low) + " is the smallest")
+	lowest = low if(low < c) else c
+	print ( str(lowest) + " is the smallest")
 
 
 comp_if(3, 1, 2)
 
 comp_nested_if(3, 2, 1)	
 
-comp_if_eq(3, 2, 1)
+comp_if_eq(3, 2, 4)
