@@ -9,4 +9,4 @@ def str_to_list():
 		final_list.append(tuple(ll2))
 	print ( final_list )
 
-str_to_list()
+str_to_list() 
