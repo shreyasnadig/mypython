@@ -1,5 +1,5 @@
-def str_to_list():
-	str = "a=b,c=d,e=f,hello=world"
+def str_to_list(st):
+	str = st
 	print(str)
 	ll = str.split(',')
 	final_list = []
@@ -9,4 +9,9 @@ def str_to_list():
 		final_list.append(tuple(ll2))
 	print ( final_list )
 
-str_to_list()
+def main():
+	s = input("Enter a string:")
+	str_to_list(s)
+
+if __name__ == '__main__':
+	main()
