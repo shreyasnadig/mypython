@@ -1,7 +1,7 @@
 def str_to_list(st):
 	str = st
 	print(str)
-	ll = str.split(',')
+	ll = str.split(';')
 	final_list = []
 	for i in range(len(ll)):
 		s2= ''.join(ll[i])
